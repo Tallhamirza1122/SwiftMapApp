@@ -18,13 +18,17 @@ class LocationViewModel : ObservableObject {
     @Published var mapLocation : Location
     {
         didSet {
+            print("Updated mapLocation to: \(mapLocation.name)")
             updateMapRegion(for: mapLocation)
         }
-        
     }
     
+    // Current Region only
     @Published var mapRegion : MKCoordinateRegion = MKCoordinateRegion()
     let mapSpan = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
+    
+    // Showing List of locations
+    @Published  var showLocationsList : Bool = false
     
     init()
     {
@@ -38,6 +42,18 @@ class LocationViewModel : ObservableObject {
         withAnimation(.easeInOut) {
             mapRegion = MKCoordinateRegion(center: location.coordinates, span: mapSpan)
         }
+    }
+    
+     func toggleLocationlist() {
+        withAnimation(.easeInOut) {
+            showLocationsList.toggle()
+        }
+    }
+    
+    func nextLocationList(location : Location){
+        print("Selected location: \(location.name)")
+            mapLocation = location
+            showLocationsList = false
     }
 
 }

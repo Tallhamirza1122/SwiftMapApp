@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5208D0612CB2CB84008DEE48 /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5208D0602CB2CB84008DEE48 /* LocationListView.swift */; };
 		5228E5512CAB172C0042C95B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5228E5502CAB172C0042C95B /* Assets.xcassets */; };
 		7D5D6A3A2CAAA53F00F79102 /* SwiftMapAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5D6A392CAAA53F00F79102 /* SwiftMapAppApp.swift */; };
 		7D5D6A3C2CAAA53F00F79102 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5D6A3B2CAAA53F00F79102 /* ContentView.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5208D0602CB2CB84008DEE48 /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
 		5228E5502CAB172C0042C95B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D5D6A362CAAA53F00F79102 /* SwiftMapApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftMapApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D5D6A392CAAA53F00F79102 /* SwiftMapAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftMapAppApp.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				7D5D6A6F2CAAACDD00F79102 /* LocationsView.swift */,
+				5208D0602CB2CB84008DEE48 /* LocationListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				7D5D6A722CAAB6BE00F79102 /* LocationViewModel.swift in Sources */,
 				7D5D6A3C2CAAA53F00F79102 /* ContentView.swift in Sources */,
 				7D5D6A702CAAACDD00F79102 /* LocationsView.swift in Sources */,
+				5208D0612CB2CB84008DEE48 /* LocationListView.swift in Sources */,
 				7D5D6A6B2CAAA91400F79102 /* Location.swift in Sources */,
 				7D5D6A3A2CAAA53F00F79102 /* SwiftMapAppApp.swift in Sources */,
 			);
